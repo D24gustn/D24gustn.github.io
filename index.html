@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="homepage02.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+  
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("image03.png");
+  min-height: 60%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 8am to 10pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-black" style="font-size:90px">홈페이지<br>만들기</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">소개
+    </span></h5>
+    <h5>
+        한국폴리텍 성남캠퍼스 인공지능소프트웨어과
+    </h5>
+    <h5>
+        전화번호 : 010-7***-6***
+    </h5>
+    <h5>
+        이메일 : tjrgustn12@naver.com
+    </h5>
+    <hr>
+    <p>
+
+        석현수의 홈페이지에 오신 것을 환영합니다. <br>이 홈페이지는 인터페이스 디자인실습 강의의 실습 예제로 만들었습니다.
+        <br>오늘 처음으로 글자태그를 배우고 있는데, <br>열심히 배워서 멋진 홈페이지를 만들어 보겠습니다.<br>
+        <br>
+
+        글자 태그를 배우고 나서 빨리 목록 태그도 배워서 저에 대해서 목록으로 표현을 할 수 있으면 좋겠습니다. <br>
+        오늘 강의에서 목록 태그를 배우고 나면,<br> 제 홈페이지에 저에 대한 몇가지 사실을 목록 태그를 활용하여 알려드릴게요.
+    </p>
+    <img style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>학교 오픈 시간</strong> 평일 8am to 10pm  </p>
+    <p><strong>주소:</strong> [13122] 경기도 성남시 수정구 수정로 398</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">시간표</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">교수님수업1</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">교수님수업2</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>java기초 이혜정 교수님</h5>
+      <ul>
+        <li> 화 오전 09:00 ~ 10:10</li>
+        <li> 수 오전 10:25~11:50</li>
+    </ul>
+        java를 이용해서 프로그래밍 개념 익히기
+    </td>
+    <p>
+
+      <h5>알고리즘 이혜정 교수님</h5>
+      <ul>
+        <li>수 오전 9:00~10:10</li>
+        <li>금 오전 10:25~11:50</li>
+    </ul>
+        컴퓨터의 문제해결 능력을 코딩에 적용하는 연습
+    </td>
+
+    <p>
+    
+      <h5>인터페이스 디자인 이혜정 교수님</h5>
+      <ul>
+                            <li>화 오전 10:25 ~ 11:50</li>
+                            <li>금 오전 9:00 ~ 10:10</li>
+                        </ul>
+                        
+                        웹페이지를 만들기 위한 HTML, CSS, JavaScript 학습
+                    </td>
+                    <p>
+    
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>기초통계 이효재 교수님</h5>
+      <ul>
+        <li>월 오전 9:00~11:50</li>
+    </ul>
+    <td>R 프로그래밍을 통한 기본 통계 학습</td>
+    <p>
+      <h5>발명과창업 이효재 교수님</h5>
+      <ul>
+        <li>수 오후 12:50~2:40</li>
+    </ul>
+    <td>ICT맨토링과 프로젝트 통한 수업</td>
+    <p>
+
+      <h5>데이터베이스 팽성권 교수님</h5>
+      <ul>
+        <li>화 오후12:50~3:40</li>
+    </ul>
+    <td>oracle 프로그램을 통해 데이터베이스 학습</td>
+    <p>
+    
+      <h5>컴퓨터구조(+운영체제) 김형오 교수님</h5>
+      <ul>
+        <li>목 오전9:00~11:50</li>
+    </ul>
+    <td>컴퓨터 구조의 학습과 운영체제 학습</td>
+    <p>
+      <h5>산업안전관리(정보보안) 이현순 교수님</h5>
+      <ul>
+        <li>목 오후12:50~2:40</li>
+    </ul>
+    <td>정보보안에 관련한 전반적인 내용 학습</td>
+    <p>
+
+    <h5>교양 영어</h5>
+    <ul>
+         <li>수 오후2:50~4:40</li>
+         </ul>
+         <td>영어표현법</td>
+
+</div> 
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">학교 소개 </span></h5>
+    <img src="image01.png" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">참고!</span> 한국폴리텍대학 성남캠퍼스는 실용의 직업중심대학으로 공부머리 보다는 <br>일머리를 개발하여 최고의 테크니션을 길러내는 대학입니다. <br>
+         우리 폴리텍은 기술의 가치와 땀의 가치를 구현하는 이시대의 보석같은 이들에게 진리이자 희망이 되고 있습니다.</p>
+    <p>학교에 대해 여쭤보시거나 방문하실 일 있으면 연락주세요</p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+<!--다음시간에 배우는 돔을 사용해 이름을 입력하면 그 사이트로 바로가는 것이 될 수 있다--->
+<div id="project">
+    <ul>
+        <li><a href="https://www.acmicpc.net/group/workbook/19274" target="_blank" title="나의 BOJ현황">
+            나의 BOJ현황</a></li>
+        <li><a href="https://github.com/D24gustn/D24gustn.github.io" target="_blank" title="나의 GitHub현황">나의 GitHub 현황</a></li>
+    </ul>
+
+    <hr>
+
+    <h3>나랑 같이 프로젝트를 하고있는 팀원의 BOJ</h3>
+</div>
+
+<div class="text-center">
+  <footer class="footer">
+      <div class="container px-4 px-lg-5">
+          <ul class="list-inline mb-5">
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="https://www.acmicpc.net/user/ch830ok">정윤우<i
+                          class="icon-social-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="https://www.acmicpc.net/user/andwave">박경언<i
+                          class="icon-social-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white" href="https://www.acmicpc.net/user/alsdn9145"><i
+                          class="icon-social-github">김민우</i></a>
+              </li>
+          </ul>
+      </div>
+  </footer>
+</div>
+
+<!-- Footer -->
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
